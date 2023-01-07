@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link href="style.css" rel="stylesheet">
+    <title>Stats</title>
+</head>
+
+<body onload="update()">
+  
+    <div id="header">
+        <h1>Statistics</h1>
+    </div>
+
+    <div class="update-div">
+        <button onclick="update()" class="update-but">Update</button>
+    </div>
+
+   <div data-set="https://api.countapi.xyz/set/nazz/views?value=" data-get="https://api.countapi.xyz/get/nazz/views" class="card" id="webpage-views">
+    <p>Webpage Views</p>
+    <h2>0</h2>
+        <input type="text" class="text-in-1" value="10">
+        <div class="pm-container">
+            <p class="pmp">+</p>
+            <p class="pmm">-</p>
+        </div>
+   </div>
+
+    <div data-set="https://api.countapi.xyz/set/nazz/youtube?value=" data-get="https://api.countapi.xyz/get/nazz/youtube" class="card" id="youtube-visits">
+    <p>Youtube Visits</p>
+    <h2>0</h2>
+    <input type="text" class="text-in-1" value="10">
+        <div class="pm-container">
+            <p class="pmp">+</p>
+            <p class="pmm">-</p>
+        </div>
+   </div>
+
+   <div data-set="https://api.countapi.xyz/set/nazz/spotify?value=" data-get="https://api.countapi.xyz/get/nazz/spotify" class="card" id="spotify-visits">
+    <p>Spotify Visits</p>
+    <h2>0</h2>
+    <input type="text" class="text-in-1" value="10">
+        <div class="pm-container">
+            <p class="pmp">+</p>
+            <p class="pmm">-</p>
+        </div>
+   </div>
+
+   <div data-set="https://api.countapi.xyz/set/nazz/instagram?value=" data-get="https://api.countapi.xyz/get/nazz/instagram" class="card" id="instagram-visits">
+    <p>Instagram Visits</p>
+    <h2>0</h2>
+    <input type="text" class="text-in-1" value="10">
+        <div class="pm-container">
+            <p class="pmp">+</p>
+            <p class="pmm">-</p>
+        </div>
+   </div>
+
+   <div data-set="https://api.countapi.xyz/set/nazz/twitter?value=" data-get="https://api.countapi.xyz/get/nazz/twitter" class="card" id="twitter-visits">
+    <p>Twitter Visits</p>
+    <h2>0</h2>
+    <input type="text" class="text-in-1" value="10">
+        <div class="pm-container">
+            <p class="pmp">+</p>
+            <p class="pmm">-</p>
+        </div>
+   </div>
+
+   <div data-set="https://api.countapi.xyz/set/nazz/snapchat?value=" data-get="https://api.countapi.xyz/get/nazz/snapchat" class="card" id="snapchat-visits">
+    <p>Snapchat Visits</p>
+    <h2>0</h2>
+    <input type="text" class="text-in-1" value="10">
+        <div class="pm-container">
+            <p class="pmp">+</p>
+            <p class="pmm">-</p>
+        </div>
+   </div>
+
+   <div data-set="https://api.countapi.xyz/set/nazz/facebook?value=" data-get="https://api.countapi.xyz/get/nazz/facebook" class="card" id="facebook-visits">
+    <p>Facebook Visits</p>
+    <h2>0</h2>
+    <input type="text" class="text-in-1" value="10">
+        <div class="pm-container">
+            <p class="pmp">+</p>
+            <p class="pmm">-</p>
+        </div>
+   </div>
+
+    <div id="footer">
+        <p>Made with ❤ by Yash Kolambekar</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

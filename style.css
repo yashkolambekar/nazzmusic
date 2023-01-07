@@ -51,7 +51,7 @@ body{
 }
 
 #header > h1{
-    font-size: 30px;
+    font-size: 28px;
     padding-top: 10px;
     color: var(--white);
 }
@@ -65,7 +65,7 @@ body{
     justify-content: center;
     padding: 10px;
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
 }
 
 #youtube-content{
@@ -74,13 +74,15 @@ body{
     padding: 10px 10px;
     border-radius: 5px;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 #youtube-content h2{
     color: var(--white);
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     filter: drop-shadow(0px 5px 5px var(--black-05));
+    -webkit-filter: drop-shadow(0px 5px 5px var(--black-05));
     padding-top: 5px;
 }
 
@@ -88,15 +90,17 @@ body{
     width: 100%;
     border-radius: 5px;
     filter: drop-shadow(0px 5px 5px var(--black-05));
+    -webkit-filter: drop-shadow(0px 5px 5px var(--black-05));
 }
 
 #social-container{
-    margin-top: 10px;
+    margin-top: 15px;
     width: 100%;
     background-color: var(--white-01);
     padding: 15px 25px;
     border-radius: 5px;
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -105,14 +109,35 @@ body{
 
 .social-svg{
     fill: var(--white);
-    height: 40px;
+    height: 35px;
 }
 
 #footer{
     width: 100%;
     color: white;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     position: absolute;
     bottom: 5px;
+}
+
+#tips-div{
+    color: var(--black);
+    position: absolute;
+    top: -50px;
+    padding: 10px 20px;
+    background: var(--white);
+    font-size: 15px;
+    transition: 0.5s ease;
+    border-radius: 20px;
+}
+
+#tips-div::after{
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 30px solid var(--white);
 }
