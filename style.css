@@ -14,7 +14,6 @@ body{
     font-family: "Poppins";
     width: 100%;
     height: 100vh;
-    overflow: hidden ;
 }
 
 #img-container{
@@ -35,12 +34,12 @@ body{
 }
 
 #back-img{
-    height: auto;
-    width: 100%;
+    height: 80vh;
+    width: auto;
     position: absolute;
     z-index: -3;
-    top:0;
-    /* left: -180px; */
+    top: 0px;
+    left: -80px;
 }
 
 #header{
@@ -69,6 +68,10 @@ body{
 }
 
 #youtube-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: var(--white-01);
     padding: 10px 10px;
@@ -79,7 +82,7 @@ body{
 
 #youtube-content h2{
     color: var(--white);
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     filter: drop-shadow(0px 5px 5px var(--black-05));
     -webkit-filter: drop-shadow(0px 5px 5px var(--black-05));
@@ -90,6 +93,7 @@ body{
     width: 100%;
     border-radius: 5px;
     filter: drop-shadow(0px 5px 5px var(--black-05));
+    margin-bottom: 8px;
     -webkit-filter: drop-shadow(0px 5px 5px var(--black-05));
 }
 
@@ -109,7 +113,7 @@ body{
 
 .social-svg{
     fill: var(--white);
-    height: 35px;
+    height: 30px;
 }
 
 #footer{

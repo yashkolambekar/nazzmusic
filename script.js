@@ -12,7 +12,7 @@ function youtubeopen(){
   xhr.responseType = "json";
   xhr.send();
   // if(this.response == null){
-    window.open("https://nazz.openinapp.co/nazz---narcos");
+    window.open("https://openinapp.co/5tjau");
 // }
 }
 
